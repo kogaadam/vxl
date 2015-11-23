@@ -10,7 +10,6 @@ set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Debug")
 set(CTEST_BUILD_FLAGS "-j10") # parallel build for makefiles
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
-#set(CTEST_GIT_COMMAND "c:/Program Files (x86)/Git/bin/git.exe")
 
 set(dashboard_model Nightly)
 
