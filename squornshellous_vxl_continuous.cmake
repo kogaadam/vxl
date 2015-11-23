@@ -1,4 +1,3 @@
-
 # VXL Example Dashboard Script
 #
 # Copy this example script and edit as necessary for your client.

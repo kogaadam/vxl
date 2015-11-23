@@ -7,15 +7,13 @@
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "ceres.kitware")
 set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Debug")
-set(CTEST_BUILD_FLAGS "-j2") # parallel build for makefiles
+set(CTEST_BUILD_FLAGS "-j8") # parallel build for makefiles
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
-#set(CTEST_GIT_COMMAND "c:/Program Files (x86)/Git/bin/git.exe")
 
-set(dashboard_model Continuous)
-
-#set(dashboard_do_memcheck 1)
-#set(dashboard_do_coverage 1)
+set(dashboard_model Experimental)
+set(dashboard_git_branch kw/experimental)
+set(dashboard_git_url git@github.com:dstoup/vxl.git)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON
