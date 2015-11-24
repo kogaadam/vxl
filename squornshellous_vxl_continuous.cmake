@@ -22,6 +22,7 @@ BUILD_SHARED_LIBS:BOOL=OFF
 BUILD_BRL:BOOL=OFF
 BUILD_CORE_PROBABILITY:BOOL=ON
 BUILD_VGUI:BOOL=ON
+VXL_BUILD_DCMTK:BOOL=ON
 QT_QMAKE_EXECUTABLE_FINDQT:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/qmake
 FFMPEG_INCLUDE1_DIR:PATH=IGNORE
 FFMPEG_INCLUDE2_DIR:PATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/include

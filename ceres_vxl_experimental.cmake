@@ -19,6 +19,7 @@ set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON
 BUILD_BRL:BOOL=OFF
 BUILD_CORE_PROBABILITY:BOOL=ON
+VXL_BUILD_DCMTK:BOOL=ON
 FFMPEG_INCLUDE2_DIR:PATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/include
 FFMPEG_avcodec_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavcodec.so
 FFMPEG_avformat_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavformat.so
