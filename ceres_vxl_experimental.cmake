@@ -20,11 +20,18 @@ BUILD_SHARED_LIBS:BOOL=ON
 BUILD_BRL:BOOL=OFF
 BUILD_CORE_PROBABILITY:BOOL=ON
 VXL_BUILD_DCMTK:BOOL=ON
-FFMPEG_INCLUDE2_DIR:PATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/include
-FFMPEG_avcodec_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavcodec.so
-FFMPEG_avformat_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavformat.so
-FFMPEG_avutil_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavutil.so
-FFMPEG_swscale_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libswscale.so
+FFMPEG_INCLUDE1_DIR:PATH=IGNORE
+FFMPEG_INCLUDE2_DIR:PATH=IGNORE
+FFMPEG_avcodec_LIBRARY:FILEPATH=IGNORE
+FFMPEG_avformat_LIBRARY:FILEPATH=IGNORE
+FFMPEG_avutil_LIBRARY:FILEPATH=IGNORE
+FFMPEG_swscale_LIBRARY:FILEPATH=IGNORE
 ")
 
 include(${CTEST_SCRIPT_DIRECTORY}/vxl_common.cmake)
+
+#FFMPEG_INCLUDE2_DIR:PATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/include
+#FFMPEG_avcodec_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavcodec.so
+#FFMPEG_avformat_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavformat.so
+#FFMPEG_avutil_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libavutil.so
+#FFMPEG_swscale_LIBRARY:FILEPATH=/home/david/kitware/dashboards/kwiver-bootstrap/build/Builds/vision_tpl/install/lib/libswscale.so

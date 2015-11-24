@@ -25,11 +25,18 @@ BUILD_VGUI:BOOL=ON
 VXL_BUILD_DCMTK:BOOL=ON
 QT_QMAKE_EXECUTABLE_FINDQT:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/qmake
 FFMPEG_INCLUDE1_DIR:PATH=IGNORE
-FFMPEG_INCLUDE2_DIR:PATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/include
-FFMPEG_avcodec_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avcodec.lib
-FFMPEG_avformat_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avformat.lib
-FFMPEG_avutil_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avutil.lib
-FFMPEG_swscale_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/swscale.lib
+FFMPEG_INCLUDE2_DIR:PATH=IGNORE
+FFMPEG_avcodec_LIBRARY:FILEPATH=IGNORE
+FFMPEG_avformat_LIBRARY:FILEPATH=IGNORE
+FFMPEG_avutil_LIBRARY:FILEPATH=IGNORE
+FFMPEG_swscale_LIBRARY:FILEPATH=IGNORE
 ")
 
 include(${CTEST_SCRIPT_DIRECTORY}/vxl_common.cmake)
+
+#FFMPEG_INCLUDE1_DIR:PATH=IGNORE
+#FFMPEG_INCLUDE2_DIR:PATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/include
+#FFMPEG_avcodec_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avcodec.lib
+#FFMPEG_avformat_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avformat.lib
+#FFMPEG_avutil_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/avutil.lib
+#FFMPEG_swscale_LIBRARY:FILEPATH=E:/kitware/vision/kwiver-bootstrap/Release/Builds/vision_tpl/install/bin/swscale.lib
