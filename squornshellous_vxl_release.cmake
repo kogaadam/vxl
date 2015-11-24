@@ -12,6 +12,8 @@ set(CTEST_CMAKE_GENERATOR "Visual Studio 12 Win64")
 set(CTEST_GIT_COMMAND "c:/Program Files (x86)/Git/bin/git.exe")
 
 set(dashboard_model Nightly)
+set (dashboard_binary_name release)
+
 #set(dashboard_model Continuous)
 
 #set(dashboard_do_memcheck 1)

@@ -5,12 +5,13 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "ceres.kitware")
-set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Releasee")
+set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Release")
 set(CTEST_BUILD_FLAGS "-j10")
 set(CTEST_BUILD_CONFIGURATION Release)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
-set(dashboard_model Nightly)
+set (dashboard_model Nightly)
+set (dashboard_binary_name release)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON

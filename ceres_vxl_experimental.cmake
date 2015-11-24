@@ -14,6 +14,8 @@ set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 set(dashboard_model Experimental)
 set(dashboard_git_branch kw/experimental)
 set(dashboard_git_url git@github.com:dstoup/vxl.git)
+set (dashboard_binary_name experimental)
+set (dashboard_source_name src-experimental)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON
