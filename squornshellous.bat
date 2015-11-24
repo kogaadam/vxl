@@ -7,4 +7,4 @@ cd \kitware\dashboards\vxl\dashboardScripts
 
 %CTEST% -S squornshellous_vxl_debug.cmake -VV > logs\debug.log
 
-%CTEST% -S squornshellous_vxl_continuous.cmake -VV > logs\continuous.log
+%CTEST% -S squornshellous_vxl_experimental.cmake -VV > logs\experimental.log
