@@ -18,8 +18,8 @@ set (dashboard_binary_name experimental)
 set (dashboard_source_name src-experimental)
 
 set(dashboard_cache "
+BUILD_FOR_VXL_DASHBOARD:BOOL=ON
 BUILD_SHARED_LIBS:BOOL=ON
-BUILD_BRL:BOOL=OFF
 BUILD_CORE_PROBABILITY:BOOL=ON
 VXL_BUILD_DCMTK:BOOL=ON
 FFMPEG_INCLUDE1_DIR:PATH=IGNORE
