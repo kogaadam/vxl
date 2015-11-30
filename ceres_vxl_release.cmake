@@ -5,7 +5,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "ceres.kitware")
-set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Release")
+set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Release-shared")
 set(CTEST_BUILD_FLAGS "-j10")
 set(CTEST_BUILD_CONFIGURATION Release)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")

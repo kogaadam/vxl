@@ -6,7 +6,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "dashcv01.kitware")
-set(CTEST_BUILD_NAME "Mac-10.10.5-clang-x86_64-Debug-shared")
+set(CTEST_BUILD_NAME "Mac-10.10.5-clang-x86_64-Debug-exp-shared")
 set(CTEST_BUILD_FLAGS "-j8") # parallel build for makefiles
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
