@@ -12,6 +12,7 @@ set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
 set(dashboard_model Nightly)
 set(dashboard_binary_name release)
+set (dashboard_source_name src-release)
 
 #set(dashboard_do_memcheck 1)
 #set(dashboard_do_coverage 1)

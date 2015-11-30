@@ -13,6 +13,7 @@ set(CTEST_GIT_COMMAND "c:/Program Files (x86)/Git/bin/git.exe")
 
 set(dashboard_model Nightly)
 set (dashboard_binary_name debug)
+set (dashboard_source_name src-debug)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=OFF

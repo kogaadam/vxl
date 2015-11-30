@@ -12,6 +12,7 @@ set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
 set(dashboard_model Nightly)
 set(dashboard_binary_name release)
+set (dashboard_source_name src-release)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON

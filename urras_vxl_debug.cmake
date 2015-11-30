@@ -13,6 +13,7 @@ set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
 set(dashboard_model Nightly)
 set (dashboard_binary_name debug)
+set (dashboard_source_name src-debug)
 
 set(dashboard_cache "
 BUILD_SHARED_LIBS:BOOL=ON
