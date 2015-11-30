@@ -6,7 +6,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "urras.kitware")
-set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Debug")
+set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Debug-shared")
 set(CTEST_BUILD_FLAGS "-j10") # parallel build for makefiles
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")

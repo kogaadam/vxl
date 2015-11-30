@@ -5,16 +5,16 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "urras.kitware")
-set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Release")
+set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Release-shared")
 set(CTEST_BUILD_FLAGS "-j10")
 set(CTEST_BUILD_CONFIGURATION Release)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
 set(dashboard_model Nightly)
-set (dashboard_binary_name release)
+set(dashboard_binary_name release)
 
-set(dashboard_do_memcheck 1)
-set(dashboard_do_coverage 1)
+#set(dashboard_do_memcheck 1)
+#set(dashboard_do_coverage 1)
 
 set(dashboard_cache "
 BUILD_FOR_VXL_DASHBOARD:BOOL=ON

@@ -6,7 +6,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "urras.kitware")
-set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.5-Debug")
+set(CTEST_BUILD_NAME "CentOS6Linux-gcc-4.4.7-Debug-shared")
 set(CTEST_BUILD_FLAGS "-j10") # parallel build for makefiles
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
@@ -14,8 +14,8 @@ set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 set(dashboard_model Experimental)
 set(dashboard_git_branch kw/experimental)
 set(dashboard_git_url https://github.com/dstoup/vxl.git)
-set (dashboard_binary_name experimental)
-set (dashboard_source_name src-experimental)
+set(dashboard_binary_name experimental)
+set(dashboard_source_name src-experimental)
 
 set(dashboard_cache "
 BUILD_FOR_VXL_DASHBOARD:BOOL=ON
