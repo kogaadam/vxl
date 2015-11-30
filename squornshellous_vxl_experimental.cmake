@@ -5,7 +5,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "squornshellous.kitware")
-set(CTEST_BUILD_NAME "VS12-64-Windows7-Debug")
+set(CTEST_BUILD_NAME "VS12-64-Windows7-Debug-Experimental")
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Visual Studio 12 Win64")
 set(CTEST_GIT_COMMAND "c:/Program Files (x86)/Git/bin/git.exe")
