@@ -6,7 +6,7 @@
 
 # Client maintainer: someone@users.sourceforge.net
 set(CTEST_SITE "ceres.kitware")
-set(CTEST_BUILD_NAME "GentooLinux-gcc-4.9.3-Debug-exp-shared")
+set(CTEST_BUILD_NAME "Fedora24-gcc-5.3.1-6-Debug-exp-shared")
 set(CTEST_BUILD_FLAGS "-j8")
 set(CTEST_BUILD_CONFIGURATION Debug)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
