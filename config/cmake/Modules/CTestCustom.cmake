@@ -18,5 +18,8 @@ message("NEW IN CONFIG SCRIPT")
 set(CTEST_CUSTOM_WARNING_EXCEPTION
   ${CTEST_CUSTOM_WARNING_EXCEPTION}
 
-  ".*stl_vector.h:.*: warning: Returning null reference.*"
+  "stl_vector.h:771:9: warning: Returning null reference { return *(this->_M_impl._M_start + __n); }"
+ 
+
+  #".*stl_vector.h:.*: warning: Returning null reference.*"
 )
