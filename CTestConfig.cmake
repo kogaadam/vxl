@@ -12,8 +12,5 @@ message("IN CONFIG SCRIPT")
 set(CTEST_CUSTOM_WARNING_EXCEPTION
   ${CTEST_CUSTOM_WARNING_EXCEPTION}
 
-  "stl_construct.h:.*: warning: Forming reference to null pointer"
-  ".*stl_uninitialized.*: warning: Forming reference to null pointer.*"
-  "stl_vector.h:771:9: warning: Returning null reference"
+  ".*stl_vector.h:.*: warning: Returning null reference.*"
 )
-
