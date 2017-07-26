@@ -262,7 +262,9 @@ configure_file( ${VXL_CMAKE_DIR}/UseVXL.cmake
 set(VXL_LIBRARY_PATH ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} CACHE STATIC "Where all the vxl libraries are, for clients to use." )
 
 message("CONFIG FILE")
-#configure_file("$CM
+configure_file("${CMAKE_CURRENT_SOURCE_DIR}/CTestCustom.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/CTestScript.cmake"
+  @ONLY)
 
 
 # Copy CTestCustom.cmake to top of build tree
