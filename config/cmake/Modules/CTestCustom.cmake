@@ -22,4 +22,7 @@ set(CTEST_CUSTOM_WARNING_EXCEPTION
  
 
   ".*stl_vector.h:.*: warning: Returning null reference.*"
+  ".*clipper/clipper.cpp:3954:9: warning: Value stored to 'k' is never read.*"
+  ".*clipper.cpp:4339:27: warning: Division by zero.*"
+
 )
