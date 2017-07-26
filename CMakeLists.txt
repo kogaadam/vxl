@@ -119,6 +119,8 @@ set( CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} ${VXL_EXTRA_CMAKE_S
 #-------------------------------------------------------------------
 #-- BUILD CONFIG OPTIONS
 
+message("BUILD CONFIG OPTIONS")
+
 # Optionally use old error reporting methods, rather than exceptions.
 # The main use is in vil which often uses/used null images to imply an error.
 option(VXL_LEGACY_ERROR_REPORTING "Use old error reporting methods rather than exceptions?" ON)
@@ -258,6 +260,10 @@ configure_file( ${VXL_CMAKE_DIR}/UseVXL.cmake
                 ${vxl_BINARY_DIR}/UseVXL.cmake COPYONLY )
 # For use in client projects that call UseVXL.cmake
 set(VXL_LIBRARY_PATH ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} CACHE STATIC "Where all the vxl libraries are, for clients to use." )
+
+message("CONFIG FILE")
+#configure_file("$CM
+
 
 # Copy CTestCustom.cmake to top of build tree
 configure_file( ${VXL_CMAKE_DIR}/CTestCustom.cmake
