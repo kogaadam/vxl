@@ -18,8 +18,10 @@ message("NEW IN CONFIG SCRIPT")
 set(CTEST_CUSTOM_WARNING_EXCEPTION
   ${CTEST_CUSTOM_WARNING_EXCEPTION}
 
-  #"stl_vector.h:771:9: warning: Returning null reference { return *(this->_M_impl._M_start + __n); }"
- 
+  "[0-9,]+ warnings? generated."
+
+  ".*stl_construct.h:.*: warning: Forming reference to null pointer.*"
+  ".*stl_uninitialized.h:.*: warning: Forming reference to null pointer.*" 
 
   ".*stl_vector.h:.*: warning: Returning null reference.*"
   ".*clipper/clipper.cpp:3954:9: warning: Value stored to 'k' is never read.*"
