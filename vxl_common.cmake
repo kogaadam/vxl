@@ -262,8 +262,8 @@ endmacro(write_cache)
 # Start with a fresh build tree.
 file(MAKE_DIRECTORY "${CTEST_BINARY_DIRECTORY}")
 if(NOT "${CTEST_SOURCE_DIRECTORY}" STREQUAL "${CTEST_BINARY_DIRECTORY}")
-# message("Clearing build tree...")
-# ctest_empty_binary_directory(${CTEST_BINARY_DIRECTORY})
+ message("Clearing build tree...")
+ ctest_empty_binary_directory(${CTEST_BINARY_DIRECTORY})
 endif()
 
 set(dashboard_continuous 0)
