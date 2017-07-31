@@ -4,8 +4,6 @@ set(CTEST_BUILD_FLAGS "-j10")
 set(CTEST_BUILD_CONFIGURATION Release)
 set(CTEST_CMAKE_GENERATOR "Unix Makefiles")
 
-set(dashboard_git_branch exclude_stl_errors)
-set(dashboard_git_url https://kwgitlab.kitware.com/david.stoup/vxl-dashboard-scripts)
 
 set (dashboard_model Experimental)
 set (dashboard_binary_name release-cxx11)
