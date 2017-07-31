@@ -80,7 +80,7 @@ endif()
 
 # Select the model (Nightly, Experimental, Continuous).
 if(NOT DEFINED dashboard_model)
-  set(dashboard_model Nightly)
+  set(dashboard_model Experimental)
 endif()
 if(NOT "${dashboard_model}" MATCHES "^(Nightly|Experimental|Continuous)$")
   message(FATAL_ERROR "dashboard_model must be Nightly, Experimental, or Continuous")
@@ -262,8 +262,8 @@ endmacro(write_cache)
 # Start with a fresh build tree.
 file(MAKE_DIRECTORY "${CTEST_BINARY_DIRECTORY}")
 if(NOT "${CTEST_SOURCE_DIRECTORY}" STREQUAL "${CTEST_BINARY_DIRECTORY}")
-  message("Clearing build tree...")
-  ctest_empty_binary_directory(${CTEST_BINARY_DIRECTORY})
+# message("Clearing build tree...")
+# ctest_empty_binary_directory(${CTEST_BINARY_DIRECTORY})
 endif()
 
 set(dashboard_continuous 0)
@@ -301,6 +301,7 @@ while(NOT dashboard_done)
   message("Found ${count} changed files")
   if(dashboard_fresh OR NOT dashboard_continuous OR count GREATER 0)
     ctest_configure()
+    ctest_configure()
     ctest_read_custom_files(${CTEST_BINARY_DIRECTORY})
 
     if(COMMAND dashboard_hook_build)
@@ -311,7 +312,9 @@ while(NOT dashboard_done)
     if(COMMAND dashboard_hook_test)
       dashboard_hook_test()
     endif()
-    ctest_test(${CTEST_TEST_ARGS})
+    ctest_test(${CTEST_TEST_ARGS}
+      START 1 END 2
+    )
 
     if(dashboard_do_coverage)
       ctest_coverage()

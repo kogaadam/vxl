@@ -1,5 +1,5 @@
 # this script runs dashboards on the machine
 
-/home/kitware/dashboards/vxl/dashboardScripts
+cd /home/kitware/dashboards/vxl/dashboardScripts
 
-/usr/bin/ctest -S ceres_vxl_cxx11_release.cmake -VV >& logs/cxx11_release.log
+/home/kitware/dashboard/cmake/cmake-3.8.1-install/bin/ctest -S titan_vxl_clang_analysis.cmake -VV >& logs/cxx11_release.log
