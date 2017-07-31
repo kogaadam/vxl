@@ -312,9 +312,7 @@ while(NOT dashboard_done)
     if(COMMAND dashboard_hook_test)
       dashboard_hook_test()
     endif()
-    ctest_test(${CTEST_TEST_ARGS}
-      START 1 END 2
-    )
+    ctest_test(${CTEST_TEST_ARGS})
 
     if(dashboard_do_coverage)
       ctest_coverage()
