@@ -119,14 +119,26 @@ set( CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} ${VXL_EXTRA_CMAKE_S
 #-------------------------------------------------------------------
 #-- BUILD CONFIG OPTIONS
 
-message("BUILD CONFIG OPTIONS")
-
 # Optionally use old error reporting methods, rather than exceptions.
 # The main use is in vil which often uses/used null images to imply an error.
 option(VXL_LEGACY_ERROR_REPORTING "Use old error reporting methods rather than exceptions?" ON)
 if(VXL_LEGACY_ERROR_REPORTING)
   add_definitions( -DVXL_LEGACY_ERROR_REPORTING )
 endif()
+
+#cppcheck if unix
+if(UNIX)
+  option(ENABLE_CPPCHECK_STATIC_ANALYSIS "Use cppcheck static analysis" OFF)
+  if(ENABLE_CPPCHECK_STATIC_ANALYSIS)
+    find_file (CPPCHECK_DIR cppcheck)
+    if(CPPCHECK_DIR)
+        include(cppcheck-static-analysis)
+    else()
+        message(SEND_ERROR "Cppcheck directory not found - turn off ENABLE_CPPCHECK_STATIC_ANALYSIS or specify correct path in CPPCHECK_DIR variable")
+    endif()
+  endif()
+endif()
+
 
 # Option to build Windows Unicode support, the string
 # type of which is wchar_t, each character is a 16-bit unsigned integer.
