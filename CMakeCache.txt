@@ -13,8 +13,7 @@
 ########################
 # EXTERNAL cache entries
 ########################
-message("CACHE")
-# CMAKE_CXX_CPPCHECK="/usr/bin/cppcheck;-DHAVE_WINDOWS_H=1;-D_MSC_VER=1910;-D__i386;--enable=informatio# n; --enable=style"
+CMAKE_CXX_CPPCHECK="/usr/bin/cppcheck;-DHAVE_WINDOWS_H=1;-D_MSC_VER=1910;-D__i386;--enable=information;--enable=style"
 
 ########################
 # INTERNAL cache entries
