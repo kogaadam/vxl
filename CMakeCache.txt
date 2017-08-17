@@ -19,7 +19,7 @@
 # INTERNAL cache entries
 ########################
 
-CMAKE_CXX_CPPCHECK:INTERNAL="/usr/bin/cppcheck;-DHAVE_WINDOWS_H=1;-D_MSC_VER=1910;-D__i386;--enable=information;--enable=style"
+CMAKE_CXX_CPPCHECK:INTERNAL=/usr/bin/cppcheck;-DHAVE_WINDOWS_H=1;-D_MSC_VER=1910;-D__i386;--enable=information;--enable=style
 
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/data/adam.kogan/code/vxl/MyTestsClang/src-release
